@@ -24,6 +24,10 @@ gem 'pg'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
+gem 'bootstrap_form', '>= 4.2.0'
+
+gem 'haml-rails'
+
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
