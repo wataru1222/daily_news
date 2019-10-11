@@ -1,4 +1,5 @@
-= bootstrap_form_for article do |form|
+
+= bootstrap_form_for [:login, article] do |form|
   = form.text_field :title
   = form.text_area :content
   .actions

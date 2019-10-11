@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
-  resources :articles
+  root to:'pages#index'
+  devise_for :users
+  resources :articles, only: [:index, :show]
+
+  namespace :login do
+    resource :articles
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
